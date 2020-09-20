@@ -5,6 +5,7 @@ s = pyimport("struct")
 using Distributed	#the children of a cell don't depend on each other -> parallelize
 addprocs(4)    		#right amount of processes on my machine, should probably be abstracted 
 using ArgParse
+using Random
 
 function parse_commandline()
     s = ArgParseSettings()
