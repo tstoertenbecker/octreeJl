@@ -1,4 +1,6 @@
 #script for creating Octree grids for POLARIS
+#right now a clumpy AGN-Torus is modelled. The underlying continous model is a wedge rotated around the z-axis
+#with density(R) = rho_0 * R**-0.5
 
 using PyCall		#using python structs for easy IO compatible with POLARIS
 s = pyimport("struct")
